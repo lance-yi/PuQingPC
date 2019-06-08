@@ -21,7 +21,15 @@
   width: 100%
   height: 5.5rem /* 88/16 */
   z-index: 1030
-
+  .navbar-nav
+    li
+      white-space: nowrap
+      margin: 0 2.25rem /* 36/16 */
+      &:last-child
+        margin-right: 0
+      &.active, &:hover
+        .nav-link
+          color: #0091ff
 
 .banner
   background: linear-gradient(to right, #41dace, #347ce1)
@@ -38,6 +46,7 @@
       height: auto
       max-height: 51.875rem /* 830/16 */
     .carousel-indicators
+      margin-bottom: 0
       li
         height: .5rem /* 8/16 */
         width: 2.125rem /* 34/16 */
@@ -54,16 +63,7 @@
   width: 100%
   max-width: 103.5rem /* 1656/16 */
   margin: 0 auto
-  .navbar-nav
-    li
-      white-space: nowrap
-      margin: 0 2.25rem /* 36/16 */
-      &:last-child
-        margin-right: 0
-      &.active, &:hover
-        .nav-link
-          color: #0091ff
-
+  
 .main-section
   display: flex
   flex-direction: column
@@ -85,7 +85,7 @@
       background: #027bee
       transform: translateX(-50%)
   &-title
-    font-size: 1.875rem /* 30/16 */
+    font-size: 1.875rem /* 30/16 */ 
 
 .wrap-item
   position: relative
@@ -98,7 +98,6 @@
   cursor: pointer
   overflow: hidden
   border-radius: .375rem /* 6/16 */
-  margin-bottom: 1rem /* 16/16 */
   &.bus-item-bg1
     background: url('../images/bus1.jpg') no-repeat 100%
   &.bus-item-bg2
@@ -123,7 +122,14 @@
 
 // 开发业务
 .bus-wrap
-  margin: 0 3.75rem /* 60/16 */ 11.25rem /* 180/16 */
+  // margin: 0 3.75rem /* 60/16 */ 11.25rem /* 180/16 */
+  .wrap-item 
+    &-content
+      padding: 3rem
+      overflow: hidden
+      p:first-child
+        margin-right: 3rem
+        margin-bottom: 0
 // 成功案例
 .case-wrap
   width: 100%
@@ -131,9 +137,6 @@
   .wrap-item
     height: 14.9375rem /* 239/16 */
     max-width: 25.25rem /* 404/16 */
-    margin-bottom: 0
-    padding-left: -10px
-    padding-right: -10px
   .case-box
     position: absolute
     width: 100%
@@ -180,7 +183,6 @@
 .solu-wrap
   width: 100%
   background: #f3f7ff
-  padding-bottom: 10rem /* 160/16 */
   .card
     width: 100%
     max-width: 21.0625rem /* 337/16 */
@@ -211,10 +213,10 @@
 // 最新资讯
 .news-wrap
   width: 100%
-  padding-bottom: 10rem /* 160/16 */
   .news-nav
     width: 16.75rem /* 268/16 */
     height: 1.8125rem /* 29/16 */
+    line-height: 1.6875rem
     border: solid 2px #195fbc
     border-radius: 1.5625rem /* 25/16 */
     text-align: center
@@ -222,7 +224,7 @@
     .nav-item
       flex: 1
       a
-        height: 1.8125rem /* 29/16 */
+        line-height: 1.6875rem
         padding: 0
         color: #195fbc
         &.active
@@ -252,8 +254,7 @@
       &.active
         background: #1d7ce6
   .news-list
-    margin-left: 12.5rem /* 200/16 */
-    margin-right: 12.5rem /* 200/16 */
+    margin: 0 6.25rem
   .card
     width: 100%
     max-width: 18rem /* 288/16 */
@@ -276,12 +277,15 @@
       display: -webkit-box
       -webkit-line-clamp: 3
       -webkit-box-orient: vertical
+    &-img-top
+      height: 10.6875rem /* 171/16 */
+      overflow: hidden
     &-img-top:hover>.news-a
       z-index: 1
     .news-a
       position: absolute
       display: block
-      width: 18rem /* 288/16 */
+      width: 100%
       height: 10.6875rem /* 171/16 */
       color: #ffffff
       top: 0
@@ -291,8 +295,8 @@
       &:before
         content: " "
         display: block
-        width: 18rem /* 288/16 */
-        height: 10.6875rem /* 171/16 */
+        width: 100%
+        height: 100%
         border-top-right-radius: .5rem /* 8/16 */
         border-top-left-radius: .5rem /* 8/16 */
         background: rgba(30,106,213,.82) url('../images/search.png') no-repeat center
@@ -309,8 +313,7 @@
 // 关于我们
 .about-wrap
   width: 100%
-  background: url('../images/aboutbg.jpg') no-repeat center 100%
-  padding-bottom: 10rem /* 160/16 */
+  background: rgb(241,254,245)  url('../images/aboutbg.jpg') no-repeat center
   .about-left
     width: 36.9375rem /* 591/16 */
     padding: 3.125rem /* 50/16 */ .9375rem /* 15/16 */
@@ -326,9 +329,8 @@
 // 合作伙伴
 .part-wrap
   width: 100%
-  padding-bottom: 3.75rem /* 60/16 */
-
 // 版权
+
 .main-footer
   background: #363737
   padding: 1.875rem /* 30/16 */ 0
@@ -359,13 +361,15 @@
       color: #999999
       line-height: 2.5
       text-decoration: none
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
   .footer-text
     padding-top: .75rem /* 12/16 */
     color: #999999
     line-height: 2
     font-size: .875rem /* 14/16 */
   .footer-link
-    margin-top: .625rem /* 10/16 */
     padding: 1.25rem /* 20/16 */ 0
     border-top: 1px solid #505052
     border-bottom: 1px solid #505052
@@ -377,23 +381,69 @@
         line-height: 2.5
         margin-right: .9375rem /* 15/16 */
 
+.bus-wrap,.case-wrap,.solu-wrap,.news-wrap,.about-wrap
+  padding-bottom: 7.5rem
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px)
-  .main-section
-    padding: 3.75rem /* 60/16 */ 0
+  .main-header
+    .navbar-nav
+      li
+        white-space: nowrap
+        margin: 0 1.125rem
+        &:last-child
+          margin-right: 0
+        &.active, &:hover
+          .nav-link
+            color: #0091ff
+  .bus-wrap,.case-wrap,.solu-wrap,.news-wrap,.about-wrap
+    padding-bottom: 6rem
+    .main-section
+      padding: 3.75rem /* 60/16 */ 0
+  // 最新资讯
+  .news-wrap
+    .news-list
+      margin: 0 .625rem
+    .card
+      &-img-top
+        height: 9.375rem
+      .news-a
+        height: 9.375rem
+  .about-wrap
+    img
+      height: 21.875rem
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px)
   .main-section
     padding: 1.875rem /* 30/16 */ 0
-
+  .bus-wrap 
+    .wrap-item-content
+      padding: 2.5rem
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px)
   .main-section
     padding: 1.25rem /* 20/16 */ 0
-
+  .bus-wrap 
+    .wrap-item-content
+      padding: 2rem
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
-  .main-section
-    padding: 1.25rem /* 20/16 */ 0
+  .banner #mainBanner
+    .carousel-indicators
+      li
+        height: .25rem /* 4/16 */
+        width: 1.25rem /* 20/16 */
+        &.active
+          width: 1.875rem /* 30/16 */
+  .bus-wrap,.case-wrap,.solu-wrap,.news-wrap,.about-wrap
+    padding-bottom: 2.25rem
+    .main-section
+      padding: 1.25rem /* 20/16 */ 0
+  .bus-wrap 
+    .wrap-item-content
+      padding: 1.5rem
+
+  .about-wrap
+    img
+      height: 18rem

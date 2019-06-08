@@ -9,6 +9,7 @@ $(window).scroll(function () {
             "box-shadow": "0 6px 6px 0 rgba(232,237,250,.6)"
         });
         $(".top-bar").css("display", "none");
+        
     } else {
         $(".main-header").removeClass("active");
         $(".top-bar").css("display", "block");
