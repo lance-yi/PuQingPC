@@ -62,43 +62,29 @@
     </div>
   </header>
   <!-- Swiper -->
-  <div class="main-body swiper-container">
+  <div class="main-body swiper-container swiper-container-v">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <!--  banner-->
-        <section class="banner">
-          <div id="mainBanner" class="carousel slide" data-ride="carousel">
-
-            <!-- 指示符 -->
-            <ul class="carousel-indicators">
-              <li data-target="#mainBanner" data-slide-to="0" class="active"></li>
-              <li data-target="#mainBanner" data-slide-to="1"></li>
-              <li data-target="#mainBanner" data-slide-to="2"></li>
-            </ul>
-
-            <!-- 轮播图片 -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/banner.jpg">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/banner.jpg">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/banner.jpg">
-              </div>
+        <section class="banner swiper-container swiper-container-h">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/banner.jpg">
             </div>
-
-            <!-- 左右切换按钮 -->
-            <a class="carousel-control-prev" href="#mainBanner" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#mainBanner" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-
+            <div class="swiper-slide">
+              <img src="./images/banner.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner.jpg">
+            </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-h"></div>
+          <!-- Add Arrows -->
+          <!-- <div class="swiper-button-next swiper-button-next-h"></div>
+          <div class="swiper-button-prev swiper-button-prev-h"></div> -->
         </section>
+
       </div>
       <div class="swiper-slide">
         <!--    开发业务-->
@@ -572,25 +558,25 @@
                 <div class="col-md-6 col-12 order-md-1 order-12 d-flex justify-content-center">
                   <div class="about-left">
                     <h5 class="mb-sm-5 mb-3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
-                    swiper-animate-delay="0.2s">重庆普擎科技有限公司</h5>
+                      swiper-animate-delay="0.2s">重庆普擎科技有限公司</h5>
                     <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
-                    swiper-animate-delay="0.4s">这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
+                      swiper-animate-delay="0.4s">这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描介绍描介绍描</p>
                     <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
-                    swiper-animate-delay="0.6s">这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
+                      swiper-animate-delay="0.6s">这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司
                       这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描这是一段公司介绍描介绍描介绍描</p>
 
-                    <div class="wrap-info text-hide mt-sm-5 mt-3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
-                    swiper-animate-delay="0.8s">关于普擎</div>
+                    <div class="wrap-info text-hide mt-sm-5 mt-3 ani" swiper-animate-effect="fadeInLeft"
+                      swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">关于普擎</div>
                   </div>
                 </div>
                 <div class="col-md-6 col-12 order-md-12 order-1 d-flex justify-content-center align-items-center">
-                  <div class="about-right ani" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s"
-                  swiper-animate-delay="0.4s">
+                  <div class="about-right ani" class="ani" swiper-animate-effect="fadeInRight"
+                    swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
                     <img src="./images/about-img.png" alt="">
                   </div>
                 </div>
@@ -613,29 +599,29 @@
             </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0.2s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part1.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0.4s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part2.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0.6s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part3.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="0.8s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part4.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="1s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part5.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="1.2s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part6.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.4s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="1.4s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part7.jpg" width="100%" alt=""></a></div>
-                <div class="col-sm-3 col-6 pb-3 ani"
-                    swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s"><a href="http://www.lanceyi.com" target="_blank"><img
+                <div class="col-sm-3 col-6 pb-3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s"
+                  swiper-animate-delay="1.6s"><a href="http://www.lanceyi.com" target="_blank"><img
                       src="./images/part8.jpg" width="100%" alt=""></a></div>
               </div>
             </div>

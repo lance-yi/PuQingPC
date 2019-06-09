@@ -33,17 +33,32 @@ $(function () {
         clearInterval(timer);
     }, function () {
         // out
-        window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+        if (t1 > 1) {
+            window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+        }
+    });
+
+    var swiperH = new Swiper('.swiper-container-h', {
+        spaceBetween: 50,
+        pagination: {
+            el: '.swiper-pagination-h',
+            clickable: true,
+        },
+        grabCursor: true,
+        navigation: {
+            nextEl: '.swiper-button-next-h',
+            prevEl: '.swiper-button-prev-h',
+        },
     });
 
     if (!mobilecheck()) {
-        new Swiper('.swiper-container', {
+        new Swiper('.swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 'auto',
             spaceBetween: 10,
             mousewheel: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-v',
                 clickable: true,
             },
             on: {
@@ -53,7 +68,9 @@ $(function () {
                     });
                     clearInterval(timer);
                     t1 = this.activeIndex;
-                    timer = window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+                    if (t1 > 1) {
+                        timer = window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+                    }
                 },
                 init: function () {
                     swiperAnimateCache(this); //隐藏动画元素 
@@ -66,13 +83,13 @@ $(function () {
             }
         });
     } else {
-        new Swiper('.swiper-container', {
+        new Swiper('.swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 'auto',
             spaceBetween: 20,
             autoHeight: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-v',
                 clickable: true,
             },
             freeMode: true,
