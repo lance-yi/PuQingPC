@@ -57,6 +57,7 @@ $(function () {
             slidesPerView: 'auto',
             spaceBetween: 10,
             mousewheel: true,
+            simulateTouch: false,
             pagination: {
                 el: '.swiper-pagination-v',
                 clickable: true,
