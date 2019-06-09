@@ -10,7 +10,7 @@
 .main-header .navbar-nav li:last-child { margin-right: 0; }
 .main-header .navbar-nav li.active .nav-link, .main-header .navbar-nav li:hover .nav-link { color: #0091ff; }
 
-.banner { background: -webkit-gradient(linear, left top, right top, from(#41dace), to(#347ce1)); background: linear-gradient(to right, #41dace, #347ce1); height: 100%; max-height: 51.875rem; overflow: hidden; }
+.banner { background: -webkit-gradient(linear, left top, right top, from(#41dace), to(#347ce1)); background: linear-gradient(to right, #41dace, #347ce1); height: 100%; overflow: hidden; }
 .banner #mainBanner { width: 100%; height: 100%; margin: 0 auto; }
 .banner #mainBanner img { width: 100%; max-width: 120rem; height: auto; max-height: 51.875rem; }
 .banner #mainBanner .carousel-indicators { margin-bottom: 0; }
