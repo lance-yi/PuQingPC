@@ -1,21 +1,19 @@
-// //滚动检测
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() > 0) {
-//         $(".main-header").css({
-//             "position": "fixed",
-//             "top": 0,
-//             "z-index": 1030,
-//             "background": "#fff",
-//             "box-shadow": "0 6px 6px 0 rgba(232,237,250,.6)"
-//         });
-//         $(".top-bar").css("display", "none");
+//滚动检测
+let t1 = 0;
+let timer = null; // 定时器
 
-//     } else {
-//         $(".main-header").removeClass("active");
-//         $(".top-bar").css("display", "block");
-//         $(".main-header").css("position", "relative");
-//     }
-// });
+window.isScrollEnd = function (t2) {
+    if (t1 == t2) {
+        $(".main-header").css({
+            "display": "none"
+        });
+    } else {
+        $(".main-header").css({
+            "display": "block"
+        });
+
+    }
+}
 
 window.mobilecheck = function () {
     var check = false;
@@ -26,6 +24,18 @@ window.mobilecheck = function () {
 };
 
 $(function () {
+
+    $(".main-header").hover(function () {
+        // over
+        $(".main-header").css({
+            "display": "block"
+        });
+        clearInterval(timer);
+    }, function () {
+        // out
+        window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+    });
+
     if (!mobilecheck()) {
         new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -36,6 +46,24 @@ $(function () {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            on: {
+                scroll: function () {
+                    $(".main-header").css({
+                        "display": "block"
+                    });
+                    clearInterval(timer);
+                    t1 = this.activeIndex;
+                    timer = window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
+                },
+                init: function () {
+                    swiperAnimateCache(this); //隐藏动画元素 
+                    this.emit('slideChangeTransitionEnd'); //在初始化时触发一次slideChangeTransitionEnd事件
+                },
+                slideChangeTransitionEnd: function () {
+                    swiperAnimate(this); //每个slide切换结束时运行当前slide动画
+                    this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); //动画只展示一次
+                }
+            }
         });
     } else {
         new Swiper('.swiper-container', {
@@ -50,4 +78,6 @@ $(function () {
             freeMode: true,
         });
     }
+
+
 });
