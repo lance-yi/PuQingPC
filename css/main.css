@@ -5,7 +5,7 @@
 .top-bar img { width: 1.375rem; height: 1.375rem; }
 .top-bar span { cursor: pointer; color: #0091ff; }
 
-.main-header { position: relative; width: 100%; height: 5.5rem; z-index: 1030; }
+.main-header { position: fixed; width: 100%; z-index: 1030; background: rgba(255, 255, 255, 0.88); }
 .main-header .navbar-nav li { white-space: nowrap; margin: 0 2.25rem; }
 .main-header .navbar-nav li:last-child { margin-right: 0; }
 .main-header .navbar-nav li.active .nav-link, .main-header .navbar-nav li:hover .nav-link { color: #0091ff; }
@@ -20,7 +20,7 @@
 
 .main-view { position: relative; width: 100%; max-width: 103.5rem; margin: 0 auto; }
 
-.main-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 6.875rem 0; }
+.main-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 5.5rem 0 2.5rem 0; }
 .main-section-line { position: relative; max-width: 31.25rem; width: 100%; height: 0.1875rem; background: #cfcfcf; margin-bottom: 0.5rem; }
 .main-section-line span { position: absolute; width: 3.75rem; height: 0.25rem; top: -0.0625rem; left: 50%; background: #027bee; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .main-section-title { font-size: 1.875rem; }
@@ -34,6 +34,7 @@
 .wrap-item .tags-line:before { content: "—"; margin-right: 0.9375rem; }
 .wrap-item:hover { -webkit-transform: translateY(-10px); transform: translateY(-10px); -webkit-box-shadow: 0 6px 18px 0 rgba(232, 237, 250, 0.6); box-shadow: 0 6px 18px 0 rgba(232, 237, 250, 0.6); }
 
+.bus-wrap { background: #ffffff; }
 .bus-wrap .wrap-item-content { padding: 3rem; overflow: hidden; }
 .bus-wrap .wrap-item-content p:first-child { margin-right: 3rem; margin-bottom: 0; }
 
@@ -54,7 +55,7 @@
 .solu-wrap .card-title { text-align: center; }
 .solu-wrap .card-text { text-indent: 2em; color: #969696; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 
-.news-wrap { width: 100%; }
+.news-wrap { width: 100%; background: #ffffff; }
 .news-wrap .news-nav { width: 16.75rem; height: 1.8125rem; line-height: 1.6875rem; border: solid 2px #195fbc; border-radius: 1.5625rem; text-align: center; overflow: hidden; }
 .news-wrap .news-nav .nav-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 .news-wrap .news-nav .nav-item a { line-height: 1.6875rem; padding: 0; color: #195fbc; }
@@ -77,13 +78,15 @@
 .news-wrap .card .news-a:after { content: "查看详情"; position: absolute; font-size: 1.25rem; font-weight: 700; top: 72%; left: 50%; color: #ffffff; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
 .about-wrap { width: 100%; background: #f1fef5 url("../images/aboutbg.jpg") no-repeat center; }
-.about-wrap .about-left { width: 36.9375rem; padding: 3.125rem 0.9375rem; }
+.about-wrap .about-left { width: 36.9375rem; }
 .about-wrap .wrap-info { width: 12.5rem; height: 3.25rem; background: url("../images/next.png") no-repeat center/100%; cursor: pointer; -webkit-transition: all 0.2s; transition: all 0.2s; }
 .about-wrap .wrap-info:hover { -webkit-transform: translateX(5px); transform: translateX(5px); }
+.about-wrap .about-right { width: 34.375rem; overflow: hidden; }
+.about-wrap .about-right img { width: 100%; height: 100%; }
 
-.part-wrap { width: 100%; }
+.part-wrap { width: 100%; background: #ffffff; }
 
-.main-footer { background: #363737; padding: 1.875rem 0; color: #ffffff; }
+.main-footer { background: #363737; padding: 1.875rem 0; color: #ffffff; height: auto !important; }
 .main-footer .footer-title { position: relative; border-bottom: 1px solid #505052; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .main-footer .footer-title:before { content: " "; position: absolute; display: block; width: 2em; height: 0.1875rem; background: #0078ff; bottom: 0; }
 .main-footer .footer-title a { color: #ffffff; text-decoration: none; }
@@ -94,23 +97,44 @@
 .main-footer .footer-link .link-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .main-footer .footer-link .link-list a { color: #999999; line-height: 2.5; margin-right: 0.9375rem; }
 
-.bus-wrap, .case-wrap, .solu-wrap, .news-wrap, .about-wrap { padding-bottom: 7.5rem; }
+.bus-wrap, .case-wrap, .solu-wrap, .news-wrap, .about-wrap { height: 100%; }
 
+html, body { position: relative; height: 100%; }
+
+@media (min-width: 1199.98px) { .swiper-container { width: 100%; height: 100%; margin-left: auto; margin-right: auto; }
+  .swiper-slide { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 @media (max-width: 1199.98px) { .main-header .navbar-nav li { white-space: nowrap; margin: 0 1.125rem; }
   .main-header .navbar-nav li:last-child { margin-right: 0; }
   .main-header .navbar-nav li.active .nav-link, .main-header .navbar-nav li:hover .nav-link { color: #0091ff; }
   .bus-wrap, .case-wrap, .solu-wrap, .news-wrap, .about-wrap { padding-bottom: 6rem; }
-  .bus-wrap .main-section, .case-wrap .main-section, .solu-wrap .main-section, .news-wrap .main-section, .about-wrap .main-section { padding: 3.75rem 0; }
+  .bus-wrap .main-section, .case-wrap .main-section, .solu-wrap .main-section, .news-wrap .main-section, .about-wrap .main-section { padding: 6.25rem 0 2.5rem 0; }
   .news-wrap .news-list { margin: 0 0.625rem; }
   .news-wrap .card-img-top { height: 9.375rem; }
   .news-wrap .card .news-a { height: 9.375rem; }
   .about-wrap img { height: 21.875rem; } }
 @media (max-width: 991.98px) { .main-section { padding: 1.875rem 0; }
   .bus-wrap .wrap-item-content { padding: 2.5rem; } }
-@media (max-width: 767.98px) { .main-section { padding: 1.25rem 0; }
-  .bus-wrap .wrap-item-content { padding: 2rem; } }
-@media (max-width: 575.98px) { .banner #mainBanner .carousel-indicators li { height: 0.25rem; width: 1.25rem; }
+@media (max-width: 767.98px) { .swiper-container { width: 100%; height: auto; }
+  .swiper-slide { margin-bottom: 0 !important; }
+  .main-section { padding: 1.25rem 0; }
+  .bus-wrap .wrap-item-content { padding: 2rem; }
+  .main-body { height: 100%; background: #363737; }
+  .main-header .navbar-brand img { height: 2.1875rem; }
+  .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
+  .banner { padding-top: 3.75rem; }
+  .banner #mainBanner .carousel-indicators li { height: 0.25rem; width: 1.25rem; }
   .banner #mainBanner .carousel-indicators li.active { width: 1.875rem; }
+  .banner #mainBanner .carousel-control-next, .banner #mainBanner .carousel-control-prev { display: none; }
+  .bus-wrap, .case-wrap, .solu-wrap, .news-wrap, .about-wrap { padding-bottom: 2.25rem; }
+  .bus-wrap .main-section, .case-wrap .main-section, .solu-wrap .main-section, .news-wrap .main-section, .about-wrap .main-section { padding: 1.25rem 0; }
+  .bus-wrap .wrap-item-content { padding: 1.5rem; }
+  .about-wrap img { height: 18rem; } }
+@media (max-width: 575.98px) { .main-header .navbar-brand img { height: 2.1875rem; }
+  .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
+  .banner { padding-top: 3.75rem; }
+  .banner #mainBanner .carousel-indicators li { height: 0.25rem; width: 1.25rem; }
+  .banner #mainBanner .carousel-indicators li.active { width: 1.875rem; }
+  .banner #mainBanner .carousel-control-next, .banner #mainBanner .carousel-control-prev { display: none; }
   .bus-wrap, .case-wrap, .solu-wrap, .news-wrap, .about-wrap { padding-bottom: 2.25rem; }
   .bus-wrap .main-section, .case-wrap .main-section, .solu-wrap .main-section, .news-wrap .main-section, .about-wrap .main-section { padding: 1.25rem 0; }
   .bus-wrap .wrap-item-content { padding: 1.5rem; }
