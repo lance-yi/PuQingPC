@@ -33,7 +33,7 @@ $(function () {
         clearInterval(timer);
     }, function () {
         // out
-        if (t1 > 1) {
+        if (t1 > 0) {
             window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
         }
     });
@@ -69,7 +69,7 @@ $(function () {
                     });
                     clearInterval(timer);
                     t1 = this.activeIndex;
-                    if (t1 > 1) {
+                    if (t1 > 0) {
                         timer = window.setTimeout("isScrollEnd(" + t1 + ")", 4000)
                     }
                 },
