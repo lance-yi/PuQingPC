@@ -130,4 +130,9 @@ $(function () {
     }
 
 
+    $("#sTop").click(function (e) { 
+        e.preventDefault();
+        swiperV.slideTo(0,1000,false)
+    });
+
 });
