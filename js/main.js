@@ -90,16 +90,43 @@ $(function () {
             direction: 'vertical',
             slidesPerView: 'auto',
             spaceBetween: 0,
-            // autoHeight: true,
+            autoHeight: true,
             pagination: {
                 el: '.swiper-pagination-v',
                 clickable: true,
             },
-            freeMode: true,
-            on: {
-
-            }
+            freeMode: true
         });
+        var ts = undefined,
+            dir = undefined;
+        var onTouchStart = function (evt) {
+            ts = evt.originalEvent.touches[0].clientY;
+        };
+        var onTouchMove = function (evt) {
+            var te = evt.originalEvent.changedTouches[0].clientY;
+            if (ts > te) {
+                dir = 'slidedown';
+            }
+            else if (ts < te) {
+                dir = 'slideup';
+            }
+            // check scroll
+            var $slide = $(this),
+                slideHeight = $slide.height(),
+                slideScrollHeight = $slide[0].scrollHeight;
+            if (slideHeight !== slideScrollHeight) {
+                // slide has content overflow
+                var scrollTop = $slide.scrollTop();
+                if (scrollTop > 0 && (scrollTop + slideHeight) < slideScrollHeight // scrolling the content
+                    || (scrollTop == 0 && dir == 'slidedown')   // moving from top edge
+                    || ((scrollTop + slideHeight) == slideScrollHeight && dir == 'slideup')) { // moving from bottom edge
+                    evt.stopPropagation();
+                }
+            }
+        };
+
+        $('.swiper-container').on('touchstart', onTouchStart);
+        $('.swiper-slide').on('touchmove', onTouchMove);
     }
 
 
