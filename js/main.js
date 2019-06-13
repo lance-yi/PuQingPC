@@ -52,7 +52,8 @@ $(function () {
     });
 
     if (!mobilecheck()) {
-        new Swiper('.swiper-container-v', {
+        console.log('pc')
+        var swiperV = new Swiper('.swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 'auto',
             spaceBetween: 10,
@@ -84,16 +85,20 @@ $(function () {
             }
         });
     } else {
-        new Swiper('.swiper-container-v', {
+        console.log('wap')
+        var swiperV = new Swiper('.swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 'auto',
-            spaceBetween: 20,
-            autoHeight: true,
+            spaceBetween: 0,
+            // autoHeight: true,
             pagination: {
                 el: '.swiper-pagination-v',
                 clickable: true,
             },
             freeMode: true,
+            on: {
+
+            }
         });
     }
 
