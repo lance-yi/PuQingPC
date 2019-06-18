@@ -1,0 +1,297 @@
+@import './common'
+
+.main-header
+  position: relative
+.mian-body
+  position: relative
+  height: auto
+  width: 100%
+.wechat-wrap
+  position: relative
+  height: 100%
+  @for $i from 1 through 4
+    &-#{$i}
+      width: 100%
+      background: url('../images/wechatdev/wechat-bg#{$i}.png') no-repeat center center
+      background-size: cover
+      @if $i == 2
+        background: #ffffff
+        .wechat-content
+          color: #333333
+          text-align: left
+          padding-right: 8.4375rem /* 135/16 */
+        .wechat-btn-link
+          color: #333333
+          border-color: #010101
+          &:hover
+            color: #333333
+      @if $i == 3
+        .wechat-content
+          color: #161616
+        .wechat-btn-link
+          color: #333333
+          border-color: #010101
+          &:hover
+            color: #333333
+      
+  // 微服务
+  .wechat-serve
+    display: flex
+    flex-direction: column
+    align-content: center
+    text-align: center
+    color: #ffffff
+    padding-bottom: 3.125rem /* 50/16 */
+    .wechat-btn-link
+      margin: 0 auto
+      border-color: #34a6d2
+      color: #34a6d2
+  .wechat-title
+    padding: 3.75rem /* 60/16 */ 0 0 0
+    text-align: center
+  .wechat-info
+    opacity: .7
+    font-size: 1.5rem /* 24/16 */
+  .wechat-serve-pic
+    height: 35.875rem /* 574/16 */
+    width: 100%
+    background: url('../images/wechatdev/wechat-img4.png') no-repeat center center
+    background-size: auto 100%
+    margin-top: 3.125rem /* 50/16 */
+    margin-bottom: 3.125rem /* 50/16 */
+    
+.wechat-wrap-bar
+  position: absolute
+  bottom: 6.25rem /* 100/16 */
+  left: .625rem /* 10/16 */
+  display: flex
+  flex-direction: column
+  &-item
+    position: relative
+    width: auto
+    min-width: 3rem /* 48/16 */
+    height: 3rem /* 48/16 */
+    line-height: 2.5rem /* 40/16 */
+    display: flex
+    margin-bottom: .625rem /* 10/16 */
+    span
+      position: absolute
+      width: 0
+      height: 3rem /* 48/16 */
+      line-height: 2.75rem /* 44/16 */
+      white-space: nowrap
+      color: #ffffff
+      background: transparent
+      border-radius: 1.5625rem /* 25/16 */
+      z-index: 1
+      overflow: hidden
+      transition: .2s ease-in-out
+  & a:hover
+    &>span
+      position: relative
+      width: auto
+      padding-left: 1.25rem /* 20/16 */
+      padding-right: 3rem /* 48/16 */
+      background: #0192ff
+    &>.wechat-wrap-bar-img
+      background: #0192ff
+      position: absolute
+  &-img
+    position: relative
+    right: 0
+    z-index: 1
+    width: 3rem /* 48/16 */
+    height: 3rem /* 48/16 */
+    background: #154e6a
+    border-radius: 50%
+    vertical-align: middle
+    text-align: center
+
+.wechat-content
+  padding: 11.625rem /* 186/16 */  0 11.625rem /* 186/16 */ 9rem /* 144/16 */
+  color: #ffffff
+  display: flex
+  flex-direction: column
+  &-text
+    font-size: 1.5rem /* 24/16 */
+    max-width: 28.75rem /* 460/16 */
+    line-height: 2.25rem /* 36/16 */
+    margin-bottom: 5.625rem /* 90/16 */
+  &-title
+    width: 100%
+    font-size: 3rem /* 48/16 */
+    margin-bottom: 1.875rem /* 30/16 */
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    &-2
+      font-size: 3.4375rem /* 55/16 */
+  &-subtitle
+    position: relative
+    width: 100%
+    font-size: 2.8125rem /* 45/16 */
+    margin-bottom: 3.75rem /* 60/16 */
+    line-height: 1.5
+    overflow: hidden
+    text-overflow: ellipsis
+    padding-bottom: .625rem /* 10/16 */
+    &:before
+      content: ""
+      position: absolute
+      display: block
+      width: 11.8125rem /* 189/16 */
+      height: .1875rem /* 3/16 */
+      background-color: #cccccc
+      bottom: 0
+    @for $i from 1 through 3
+      &-#{$i}
+        @if $i == 2
+          font-size: 2.5rem /* 40/16 */
+          overflow: inherit
+        &:before
+          @if $i == 1
+            background-color: #00abd8
+            left: 0
+          @if $i == 2
+            width: 3.125rem /* 50/16 */
+            height: .125rem /* 2/16 */
+            left: - 3.75rem /* 60/16 */
+            bottom: 50%
+          @if $i == 3
+            left: 0
+    &-2:after
+      content: ""
+      position: absolute
+      display: block
+      width: 3.125rem /* 50/16 */
+      height: .125rem /* 2/16 */
+      background-color: #cccccc
+      right: - .625rem /* 10/16 */
+      bottom: 50%
+
+.wechat-pic
+  flex: 1
+  height: 100%
+  @for $i from 1 through 3
+    &-#{$i}
+      height: 44.375rem /* 710/16 */
+      max-height: 44.375rem /* 710/16 */
+      background: url('../images/wechatdev/wechat-img#{$i}.png') no-repeat center center
+      background-size: cover
+      @if $i == 1
+        height: 43.625rem /* 698/16 */
+        background-position: left
+        background-size: auto 100%
+      @if $i == 2
+        background-size: auto 100%
+      @if $i == 3
+        height: 36.875rem /* 590/16 */
+        width: 36.125rem /* 578/16 */
+        background-size: auto 100%
+
+.wechat-btn-link
+  display: block
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  max-width: 16.3125rem /* 261/16 */
+  height: 4.125rem /* 66/16 */
+  line-height: 4.125rem /* 66/16 */
+  color: #ffffff
+  font-size: 1.5rem /* 24/16 */
+  border: solid 1px #ffffff
+  text-align: center
+  border-radius: 2.0625rem /* 33/16 */
+  &:hover
+    text-decoration: none
+    color: #ffffff
+  
+@media (max-width: 1199.98px)
+  .wechat-pic
+    @for $i from 1 through 3
+      &-#{$i}
+        height: 34.375rem /* 550/16 */
+        background: url('../images/wechatdev/wechat-img#{$i}.png') no-repeat center center
+        background-size: cover
+        @if $i == 1
+          background-size: 100% 85%
+        @if $i == 2
+          background-size: auto 85%
+        @if $i == 3
+          background-position: bottom 0
+          background-size: 100% 100%
+
+@media (max-width: 991.98px)
+  .wechat-content
+    padding: 10rem /* 160/16 */  0 10rem /* 160/16 */ .625rem /* 10/16 */
+    &-text
+      font-size: 1.125rem /* 18/16 */
+    &-title
+      font-size: 2.5rem /* 40/16 */
+    &-subtitle
+      font-size: 2.5rem /* 40/16 */
+  .wechat-pic
+    @for $i from 1 through 3
+      &-#{$i}
+        height: 30rem /* 480/16 */
+        background: url('../images/wechatdev/wechat-img#{$i}.png') no-repeat center center
+        background-size: cover
+        @if $i == 1
+          background-size: 100% 85%
+        @if $i == 2
+          background-position: bottom
+          background-size: auto 75%
+        @if $i == 3
+          background-position: bottom 0
+          background-size: 100% auto
+  .wechat-btn-link
+    height: 3.625rem /* 58/16 */
+    line-height: 3.625rem /* 58/16 */
+    font-size: 1.375rem /* 22/16 */
+  .wechat-wrap
+    .wechat-serve-pic    
+      background-size: 80% 90%
+
+@media (max-width: 767.98px)
+  .wechat-wrap-2,.wechat-wrap-4
+    .wechat-content
+      padding-right: .625rem /* 10/16 */
+
+  .wechat-content
+    padding: 1.25rem /* 20/16 */  0  2.5rem /* 40/16 */ .625rem /* 10/16 */
+    &-text
+      font-size: 1.125rem /* 18/16 */
+    &-title
+      font-size: 2.5rem /* 40/16 */
+    &-subtitle
+      font-size: 2.5rem /* 40/16 */
+  .wechat-pic
+    @for $i from 1 through 3
+      &-#{$i}
+        height: 30rem /* 480/16 */
+        background: url('../images/wechatdev/wechat-img#{$i}.png') no-repeat center center
+        background-size: cover
+        @if $i == 1
+          background-size: 100% 85%
+        @if $i == 2
+          background-size: 90% 75%
+        @if $i == 3
+          background-size: 90% 80%
+  .wechat-btn-link
+    height: 3.625rem /* 58/16 */
+    line-height: 3.625rem /* 58/16 */
+    font-size: 1.375rem /* 22/16 */
+  .wechat-wrap
+    .wechat-serve-pic
+      height: 21.875rem /* 350/16 */ 
+      background-size: 100% 100%
+
+@media (max-width: 575.98px)
+  .wechat-pic
+    @for $i from 1 through 3
+      &-#{$i}
+        height: 27.5rem /* 440/16 */
+  .wechat-wrap
+    .wechat-serve-pic
+      height: 21.875rem /* 350/16 */ 
+      background-size: 100% 100%
