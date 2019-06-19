@@ -1,14 +1,9 @@
 @import './common'
-
-.main-header
-  position: relative
-.mian-body
-  position: relative
-  height: auto
-  width: 100%
 .soft-wrap
   position: relative
   height: 100%
+  .main-view
+    padding-top: 6.25rem /* 100/16 */
   @for $i from 1 through 4
     &-#{$i}
       width: 100%
@@ -29,7 +24,7 @@
         background: #d7ebfb
   // 解决方案
   .soft-title
-    padding: 3.75rem /* 60/16 */ 0
+    padding: 1.25rem /* 20/16 */ 0
     text-align: center
   .soft-soluwrap
     padding-bottom: 6.25rem /* 100/16 */
@@ -299,3 +294,6 @@
     @for $i from 1 through 5
       &-#{$i}
         height: 27.5rem /* 440/16 */
+  .soft-wrap
+    .main-view
+      padding-top: 1.25rem /* 20/16 */

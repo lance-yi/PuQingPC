@@ -8,7 +8,7 @@ var Conf = {
   // 文字闪烁
   flicker() {
     $('.hot').css('color', '#fF0000')
-    setTimeout(() => $('.hot').css('color', '#03a9f4'), 200)
+    setTimeout(() => $('.hot').css('color', '#dc3545'), 200)
     setTimeout(() => $('.hot').css('color', '#fF0000'), 500)
   },
   init() {
