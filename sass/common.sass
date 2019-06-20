@@ -1,7 +1,7 @@
 @font-face 
-  font-family: 'iconfont' /* project id 1245505 */
-  src: url('//at.alicdn.com/t/font_1245505_t8me05fqopb.eot')
-  src: url('//at.alicdn.com/t/font_1245505_t8me05fqopb.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_1245505_t8me05fqopb.woff2') format('woff2'),url('//at.alicdn.com/t/font_1245505_t8me05fqopb.woff') format('woff'),url('//at.alicdn.com/t/font_1245505_t8me05fqopb.ttf') format('truetype'),url('//at.alicdn.com/t/font_1245505_t8me05fqopb.svg#iconfont') format('svg')
+  font-family: 'iconfont'  /* project id 1245505 */
+  src: url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot')
+  src: url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff2') format('woff2'),url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff') format('woff'),url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.ttf') format('truetype'),url('//at.alicdn.com/t/font_1245505_3ie4smsbn42.svg#iconfont') format('svg')
 
 
 
@@ -12,6 +12,20 @@
   -webkit-font-smoothing: antialiased
   -webkit-text-stroke-width: 0.1px
   -moz-osx-font-smoothing: grayscale
+
+
+// 定义参数
+  
+$mainColor: #0091ff
+$activeColor: #1e6ac0
+$titleColor: #3b5e86
+$defaultColor: #f5f4f1
+@mixin text-over($n: 3)
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: $n
+  -webkit-box-orient: vertical
 
 /* 公共的样式 */
 html,body
@@ -28,7 +42,6 @@ html,body
   justify-content: center
   align-items: center
 
-$mainColor: #0091ff
 
 /* 颜色值 */
 .text-96
@@ -433,3 +446,5 @@ $mainColor: #0091ff
         height: 2.1875rem
     .navbar-toggler
       padding: .15rem .25rem
+  .dual
+    visibility: hidden
