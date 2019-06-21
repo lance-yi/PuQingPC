@@ -1,20 +1,17 @@
 @import './common'
 
-.main-header
-  position: relative
-  background: #ffffff
-  border-bottom: 1px solid #f5f5f5
+
 .main-body
   max-width: 91.25rem /* 1460/16 */
   width: 100%
   position: relative
-  padding-top: 3.75rem /* 60/16 */
+  padding-top: 6.25rem /* 100/16 */
   padding-bottom: 3.75rem /* 60/16 */
 .news-subtitle
   display: flex
   text-align: center
   padding-bottom: 1.625rem /* 26/16 */
-  span
+  a
     position: relative
     height: 3.3125rem /* 53/16 */
     line-height: 3.3125rem /* 53/16 */
@@ -51,6 +48,7 @@
       z-index: 2
     &:hover,&.active
       background: $activeColor
+      text-decoration: none
       &:after
         border-left-color: $activeColor
 
@@ -110,11 +108,36 @@
     bottom: 0
     left: 0
     right: 0
+.swiper-button-next,.swiper-button-prev
+  height: 100%
+  width: 2.5rem /* 40/16 */
+  top: 0
+  &:after
+    content: ""
+    width: 2.5rem /* 40/16 */
+    height: 100%
+    position: absolute
+    top: 0
+    background: rgba(0,0,0,.05)
+    visibility: hidden
+
+.swiper-button-next
+  background: url('../images/icon-right.png') no-repeat center center
+.swiper-button-prev
+  background: url('../images/icon-left.png')  no-repeat center center
+.swiper-button-next.swiper-button-disabled:hover, .swiper-button-prev.swiper-button-disabled:hover
+  &:after
+    visibility: hidden
+.swiper-button-next:hover,.swiper-button-prev:hover
+  &:after
+    visibility: visible 
+    
+    
 
 .news-items
   .news-item
     &:not(:last-child)
-      margin-bottom: .625rem /* 10/16 */
+      margin-bottom: .875rem /* 14/16 */
     
     &:last-child
       .news-item-content
@@ -173,6 +196,7 @@
       &:not(:last-child)
         border-bottom: 1px solid #e7e7e7
     .news-item-content
+      padding-top: 0
       border: none
     .news-item-title
       font-size: 1.75rem /* 28/16 */
@@ -181,7 +205,7 @@
       height: 11.3125rem /* 181/16 */
     .news-item-times
       color: #999999
-      margin-bottom: 1.25rem /* 20/16 */    
+      margin-bottom: .9375rem /* 15/16 */ 
     .news-item-more
       color: #222222
     .page
@@ -216,14 +240,15 @@ $colors: #fb7922, #3a599a, #41abe1, #3a599b, #0078ff, #41abe1, #3b5e86
     flex-wrap: wrap
 
     @for $i from 1 through length($colors)
-      span:nth-child(#{length($colors)}n+#{$i})
+      a:nth-child(#{length($colors)}n+#{$i})
         // background: lighten(nth($colors, $i), 20%)
         background: nth($colors, $i)
-    span
+    a
       color: #ffffff
       margin-right: .625rem /* 10/16 */
       margin-bottom: .625rem /* 10/16 */
-      padding: .9375rem /* 15/16 */ 1.875rem /* 30/16 */    
+      padding: .9375rem /* 15/16 */ 1.875rem /* 30/16 */
+      text-decoration: none
 
   &-list__link
     padding-left: 1rem
@@ -264,7 +289,12 @@ $colors: #fb7922, #3a599a, #41abe1, #3a599b, #0078ff, #41abe1, #3b5e86
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px)
   .main-body
+    padding-top: 4.25rem
     padding-bottom: 1.25rem /* 20/16 */
+  .news-subtitle
+    padding-bottom: .9375rem /* 15/16 */
+  .news-title
+    margin-bottom: .3125rem /* 5/16 */
   .news-content
     border: none
     margin-bottom: .625rem /* 10/16 */
@@ -277,6 +307,8 @@ $colors: #fb7922, #3a599a, #41abe1, #3a599b, #0078ff, #41abe1, #3b5e86
   .news-case
     margin-left: .625rem /* 10/16 */
     margin-right: .625rem /* 10/16 */
+  .news-items.news-industry-items
+    margin-top: .9375rem /* 15/16 */
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
   .swiper-entreprice
@@ -285,12 +317,26 @@ $colors: #fb7922, #3a599a, #41abe1, #3a599b, #0078ff, #41abe1, #3b5e86
     .news-item-content
       padding-top: 0
   .news-items.swiper-news-items
+    padding-right: 1.125rem /* 18/16 */
+    padding-left: 1.125rem /* 18/16 */
+    .news-item
+      a
+        flex-wrap: wrap
     .news-item-pic
-      width: 8.125rem /* 130/16 */
+      width: 100%
+      height: auto
+      margin-bottom: .625rem /* 10/16 */
+      padding-right: .625rem /* 10/16 */
   .news-items.news-industry-items
     margin-top: .625rem /* 10/16 */
+    .news-item
+      a
+        flex-wrap: wrap
     .news-item-pic
-      width: 8.125rem /* 130/16 */
+      width: 100%
+      height: auto
+      margin-bottom: .625rem /* 10/16 */
+      padding-right: .625rem /* 10/16 */
     .news-item-times
       margin-bottom: .3125rem /* 5/16 */
     .news-item-title

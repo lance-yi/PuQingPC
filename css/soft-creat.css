@@ -76,6 +76,13 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 
 /* 左右 边导航 */
 .dual { position: fixed; height: auto; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1040; }
+.dual-left { bottom: 12.5rem; left: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.dual-left-item { position: relative; width: auto; min-width: 3rem; height: 3rem; line-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0.625rem; }
+.dual-left-item span { position: absolute; width: 0; height: 3rem; line-height: 2.75rem; white-space: nowrap; color: #ffffff; background: transparent; border-radius: 1.5625rem; z-index: 1; overflow: hidden; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
+.dual-left a:hover { text-decoration: none; }
+.dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
+.dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
+.dual-left-img { position: relative; left: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
 .dual-right { right: 0.625rem; }
 .dual ul { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0; padding: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; list-style: none; }
 .dual ul li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; height: 3.75rem; width: 3.75rem; margin-bottom: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; white-space: nowrap; color: #ffffff; border-radius: 1.5625rem; position: relative; }
@@ -99,7 +106,8 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
   .main-contact { padding: 5rem 0 3.75rem 0; } }
 @media (max-width: 575.98px) { .main-header .navbar-brand img { height: 2.1875rem; }
   .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
-  .dual { visibility: hidden; } }
+  .dual { visibility: hidden; }
+  .main-contact { padding: 2rem 0; } }
 .soft-wrap { position: relative; height: 100%; }
 .soft-wrap .main-view { padding-top: 6.25rem; }
 .soft-wrap-1 { width: 100%; background: url("../images/softcreat/soft-bg1.png") no-repeat center center; background-size: cover; }
@@ -120,13 +128,6 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .soft-wrap .soft-items-box h1 { font-size: 2.625rem; padding-bottom: 1.25rem; }
 .soft-wrap .soft-items-box p { font-size: 1.625rem; color: #b1b1b3; line-height: 1.75rem; padding-top: 1.25rem; }
 
-.soft-wrap-bar { position: absolute; bottom: 6.25rem; left: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-.soft-wrap-bar-item { position: relative; width: auto; min-width: 3rem; height: 3rem; line-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0.625rem; }
-.soft-wrap-bar-item span { position: absolute; width: 0; height: 3rem; line-height: 2.75rem; white-space: nowrap; color: #ffffff; background: transparent; border-radius: 1.5625rem; z-index: 1; overflow: hidden; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
-.soft-wrap-bar a:hover > span { position: relative; width: auto; padding-left: 1.25rem; padding-right: 3rem; background: #0192ff; }
-.soft-wrap-bar a:hover > .soft-wrap-bar-img { background: #0192ff; position: absolute; }
-.soft-wrap-bar-img { position: relative; right: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
-
 .soft-content { padding: 11.625rem 0 11.625rem 9rem; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 .soft-content-text { font-size: 1.5rem; max-width: 28.75rem; line-height: 2.25rem; margin-bottom: 5.625rem; }
 .soft-content-title { width: 100%; font-size: 3rem; margin-bottom: 1.875rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -138,7 +139,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .soft-content-subtitle-4:before { background-color: #cccccc; right: 0; }
 .soft-content-subtitle-5:before { background-color: #cccccc; left: 0; }
 
-.soft-pic { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 100%; }
+.soft-pic { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 .soft-pic-1 { height: 44.375rem; max-height: 44.375rem; background: url("../images/softcreat/soft-img1.png") no-repeat center center; background-size: cover; height: 44.4375rem; }
 .soft-pic-2 { height: 44.375rem; max-height: 44.375rem; background: url("../images/softcreat/soft-img2.png") no-repeat center center; background-size: cover; background-size: auto 100%; }
 .soft-pic-3 { height: 44.375rem; max-height: 44.375rem; background: url("../images/softcreat/soft-img3.png") no-repeat center center; background-size: cover; height: 36.875rem; width: 36.125rem; background-size: auto 100%; }
@@ -179,6 +180,9 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
   .soft-pic-3 { height: 27.5rem; }
   .soft-pic-4 { height: 27.5rem; }
   .soft-pic-5 { height: 27.5rem; }
-  .soft-wrap .main-view { padding-top: 1.25rem; } }
+  .soft-wrap .main-view { padding-top: 1.25rem; }
+  .soft-content-title { font-size: 2.25rem; }
+  .soft-content-subtitle { white-space: initial; font-size: 1.875rem; margin-bottom: 1.25rem; }
+  .soft-content-text { margin-bottom: 1.875rem; } }
 
 /*# sourceMappingURL=soft-creat.css.map */

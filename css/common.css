@@ -76,6 +76,13 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 
 /* 左右 边导航 */
 .dual { position: fixed; height: auto; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 1040; }
+.dual-left { bottom: 12.5rem; left: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.dual-left-item { position: relative; width: auto; min-width: 3rem; height: 3rem; line-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0.625rem; }
+.dual-left-item span { position: absolute; width: 0; height: 3rem; line-height: 2.75rem; white-space: nowrap; color: #ffffff; background: transparent; border-radius: 1.5625rem; z-index: 1; overflow: hidden; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
+.dual-left a:hover { text-decoration: none; }
+.dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
+.dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
+.dual-left-img { position: relative; left: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
 .dual-right { right: 0.625rem; }
 .dual ul { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0; padding: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; list-style: none; }
 .dual ul li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; height: 3.75rem; width: 3.75rem; margin-bottom: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; white-space: nowrap; color: #ffffff; border-radius: 1.5625rem; position: relative; }
@@ -99,6 +106,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
   .main-contact { padding: 5rem 0 3.75rem 0; } }
 @media (max-width: 575.98px) { .main-header .navbar-brand img { height: 2.1875rem; }
   .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
-  .dual { visibility: hidden; } }
+  .dual { visibility: hidden; }
+  .main-contact { padding: 2rem 0; } }
 
 /*# sourceMappingURL=common.css.map */
