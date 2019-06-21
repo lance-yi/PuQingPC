@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot"); src: url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.svg#iconfont") format("svg"); }
+@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.eot"); src: url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.svg#iconfont") format("svg"); }
 .iconfont { font-family: "iconfont" !important; font-size: 1rem; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.1px; -moz-osx-font-smoothing: grayscale; }
 
 /* 公共的样式 */
@@ -83,6 +83,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
 .dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
 .dual-left-img { position: relative; left: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
+.dual-left-img i { color: #ffffff; font-size: 1.375rem; line-height: 3rem; }
 .dual-right { right: 0.625rem; }
 .dual ul { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0; padding: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; list-style: none; }
 .dual ul li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; height: 3.75rem; width: 3.75rem; margin-bottom: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; white-space: nowrap; color: #ffffff; border-radius: 1.5625rem; position: relative; }
@@ -107,7 +108,15 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 @media (max-width: 575.98px) { .main-header .navbar-brand img { height: 2.1875rem; }
   .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
   .dual { visibility: hidden; }
-  .main-contact { padding: 2rem 0; } }
+  .main-contact { padding: 2rem 0; }
+  .main-contact-title { font-size: 1.875rem; margin-bottom: 1.25rem; }
+  .main-contact-form .contact-group { height: 3rem; line-height: 3rem; margin-bottom: 0.9375rem; }
+  .main-contact-form .contact-group label { left: 1rem; }
+  .main-contact-form .contact-text-group { margin-bottom: 1.875rem; }
+  .main-contact-form .contact-text-group label { left: 1rem; line-height: 3rem; }
+  .main-contact-form .contact-input input { height: 3rem; line-height: 3rem; }
+  .main-contact-form .contact-textarea textarea { line-height: 2.875rem; padding-left: 6.625rem; }
+  .main-contact-btn { font-size: 1.125rem; padding: 0.5rem 9rem; } }
 .main-body { max-width: 91.25rem; width: 100%; position: relative; padding-top: 6.25rem; padding-bottom: 3.75rem; }
 
 .news-subtitle { display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; padding-bottom: 1.625rem; }

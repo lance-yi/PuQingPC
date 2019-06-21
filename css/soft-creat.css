@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot"); src: url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_3ie4smsbn42.svg#iconfont") format("svg"); }
+@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.eot"); src: url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_ilbeehz5v09.svg#iconfont") format("svg"); }
 .iconfont { font-family: "iconfont" !important; font-size: 1rem; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.1px; -moz-osx-font-smoothing: grayscale; }
 
 /* 公共的样式 */
@@ -83,6 +83,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
 .dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
 .dual-left-img { position: relative; left: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
+.dual-left-img i { color: #ffffff; font-size: 1.375rem; line-height: 3rem; }
 .dual-right { right: 0.625rem; }
 .dual ul { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0; padding: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; list-style: none; }
 .dual ul li { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; height: 3.75rem; width: 3.75rem; margin-bottom: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; white-space: nowrap; color: #ffffff; border-radius: 1.5625rem; position: relative; }
@@ -107,7 +108,15 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 @media (max-width: 575.98px) { .main-header .navbar-brand img { height: 2.1875rem; }
   .main-header .navbar-toggler { padding: 0.15rem 0.25rem; }
   .dual { visibility: hidden; }
-  .main-contact { padding: 2rem 0; } }
+  .main-contact { padding: 2rem 0; }
+  .main-contact-title { font-size: 1.875rem; margin-bottom: 1.25rem; }
+  .main-contact-form .contact-group { height: 3rem; line-height: 3rem; margin-bottom: 0.9375rem; }
+  .main-contact-form .contact-group label { left: 1rem; }
+  .main-contact-form .contact-text-group { margin-bottom: 1.875rem; }
+  .main-contact-form .contact-text-group label { left: 1rem; line-height: 3rem; }
+  .main-contact-form .contact-input input { height: 3rem; line-height: 3rem; }
+  .main-contact-form .contact-textarea textarea { line-height: 2.875rem; padding-left: 6.625rem; }
+  .main-contact-btn { font-size: 1.125rem; padding: 0.5rem 9rem; } }
 .soft-wrap { position: relative; height: 100%; }
 .soft-wrap .main-view { padding-top: 6.25rem; }
 .soft-wrap-1 { width: 100%; background: url("../images/softcreat/soft-bg1.png") no-repeat center center; background-size: cover; }
@@ -124,7 +133,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .soft-wrap .soft-soluwrap-item p { text-align: left; max-width: 15.625rem; }
 .soft-wrap .soft-items { padding-bottom: 6.25rem; }
 .soft-wrap .soft-items-box { min-height: 36.25rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#071628), color-stop(24%, rgba(7, 22, 40, 0.5)), to(#071628)), -webkit-gradient(linear, left top, left bottom, from(#09192d), to(#09192d)); background-image: linear-gradient(0deg, #071628 0%, rgba(7, 22, 40, 0.5) 24%, #071628 100%), linear-gradient(#09192d, #09192d); background-blend-mode: normal, normal; opacity: 0.7; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 1rem; }
-.soft-wrap .soft-items-box img { padding: 1.875rem; }
+.soft-wrap .soft-items-box img { padding: 1.875rem; width: 100%; height: 11rem; max-width: 12rem; }
 .soft-wrap .soft-items-box h1 { font-size: 2.625rem; padding-bottom: 1.25rem; }
 .soft-wrap .soft-items-box p { font-size: 1.625rem; color: #b1b1b3; line-height: 1.75rem; padding-top: 1.25rem; }
 
@@ -181,8 +190,14 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
   .soft-pic-4 { height: 27.5rem; }
   .soft-pic-5 { height: 27.5rem; }
   .soft-wrap .main-view { padding-top: 1.25rem; }
-  .soft-content-title { font-size: 2.25rem; }
-  .soft-content-subtitle { white-space: initial; font-size: 1.875rem; margin-bottom: 1.25rem; }
-  .soft-content-text { margin-bottom: 1.875rem; } }
+  .soft-wrap .soft-title { font-size: 1.75rem; }
+  .soft-wrap .soft-items-box { min-height: 33rem; margin-left: -0.625rem; margin-right: -0.625rem; }
+  .soft-wrap .soft-items-box h1 { font-size: 1.75rem; }
+  .soft-wrap .soft-items-box h2 { font-size: 1.5rem; }
+  .soft-wrap .soft-items-box p { font-size: 1rem; }
+  .soft-content-title { font-size: 1.75rem; }
+  .soft-content-subtitle { white-space: initial; font-size: 1.5rem; margin-bottom: 1.25rem; }
+  .soft-content-text { font-size: 1rem; margin-bottom: 1.875rem; max-width: 22.5rem; }
+  .soft-btn-link { height: 2.5rem; line-height: 2.5rem; font-size: 1rem; max-width: 9.375rem; } }
 
 /*# sourceMappingURL=soft-creat.css.map */

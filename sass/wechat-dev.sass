@@ -239,25 +239,36 @@
     @for $i from 1 through 3
       &-#{$i}
         height: 27.5rem /* 440/16 */
+        @if $i == 2
+          height: 31.25rem /* 500/16 */
   .wechat-wrap
     .wechat-serve-pic
       height: 21.875rem /* 350/16 */ 
-      background-size: 100% 100%
+      background-size: 100% 90%
     .wechat-serve
       padding-top: 1.875rem /* 30/16 */
+    .wechat-info 
+      font-size: 1.125rem /* 18/16 */
   .wechat-title
-    font-size: 2.25rem /* 36/16 */
+    font-size: 1.75rem /* 28/16 */
   .wechat-content
     &-title
-      font-size: 2.25rem /* 36/16 */
+      font-size: 1.75rem /* 28/16 */
     &-subtitle
       white-space: initial
-      font-size: 1.875rem /* 30/16 */
+      font-size: 1.5rem /* 24/16 */
       margin-bottom: 1.25rem /* 20/16 */
     &-text
+      font-size: 1rem /* 16/16 */
       margin-bottom: 1.875rem /* 30/16 */
+  .wechat-btn-link
+    height: 2.5rem /* 40/16 */
+    line-height: 2.5rem /* 40/16 */
+    font-size: 1rem /* 16/16 */
+    max-width: 9.375rem /* 150/16 */
+
   .wechat-content-title-2
-    font-size: 2.125rem /* 34/16 */
+    font-size: 1.75rem /* 28/16 */
     white-space: initial
   .wechat-content-subtitle-2
     &:after,&:before
