@@ -1,3 +1,4 @@
+var goToSwiperPage = new Function();
 $(function () {
     if (!mobilecheck()) {
         console.log("pc")
@@ -18,6 +19,12 @@ $(function () {
                 }
             }
         });
+        if (Conf.getQueryString('index')) {
+            swiperV.slideTo(Conf.getQueryString('index'), 1000, true)
+        }
+        goToSwiperPage = function (index) {
+            swiperV.slideTo(index, 1000, true)
+        }
     } else {
         console.log("wap")
         var swiperV = new Swiper('.swiper-container-v', {

@@ -39,7 +39,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .main-header .softnav .childnav-right { padding-right: 0.625rem; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .main-header .softnav .childnav-right .tab-content { text-align: right; }
 .main-header .softnav .childnav-right .tab-content img { width: 100%; height: 100%; max-width: 22rem; max-height: 13rem; }
-.main-header .wechatnav-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; }
+.main-header .wechatnav-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; cursor: pointer; text-decoration: none; }
 .main-header .wechatnav-item .iconfont { font-size: 3.75rem; color: #cccccc; }
 .main-header .wechatnav-item:hover .iconfont, .main-header .wechatnav-item:hover h3 { color: #0091ff; }
 .main-header .hot { color: red; position: absolute; top: 0; right: 0; font-size: 1.375rem; }
@@ -155,21 +155,16 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; }
 .case-news-item a { line-height: 2rem; color: #707070; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-right: 1.25rem; }
 .case-news-item span { width: 7.5rem; }
 
-@media (max-width: 767.98px) { .main-body { padding-top: 0.625rem; padding-bottom: 1.25rem; }
-  .news-subtitle { padding-bottom: 0.9375rem; }
-  .case-title { margin-bottom: 0.3125rem; }
-  .news-content { border: none; margin-bottom: 0.625rem; }
-  .main-header { position: fixed; }
-  .news-content { padding: 0.625rem 0; }
-  .news-items { padding-top: 0.625rem; }
-  .news-case { margin-left: 0.625rem; margin-right: 0.625rem; }
-  .news-items.news-industry-items { margin-top: 0.9375rem; } }
+@media (max-width: 767.98px) { .main-body { padding-top: 0.625rem; padding-bottom: 1.25rem; } }
 @media (max-width: 575.98px) { .case-banner-content__item { margin: 0; width: 33.33%; }
   .case-banner-content__icon { width: 3.75rem; height: 3.75rem; line-height: 3.75rem; font-size: 1.875rem; }
   .case-banner-content__title { font-size: 1rem; }
   .case-title { height: 2.5rem; font-size: 1.375rem; }
   .case-title-num { font-size: 1.625rem; }
   .case-title-line { height: 2.125rem; width: 0.0875rem; }
-  .news-content { padding: 0; } }
+  .case-content .col, .case-content .col-1, .case-content .col-10, .case-content .col-11, .case-content .col-12, .case-content .col-2, .case-content .col-3, .case-content .col-4, .case-content .col-5, .case-content .col-6, .case-content .col-7, .case-content .col-8, .case-content .col-9, .case-content .col-auto, .case-content .col-lg, .case-content .col-lg-1, .case-content .col-lg-10, .case-content .col-lg-11, .case-content .col-lg-12, .case-content .col-lg-2, .case-content .col-lg-3, .case-content .col-lg-4, .case-content .col-lg-5, .case-content .col-lg-6, .case-content .col-lg-7, .case-content .col-lg-8, .case-content .col-lg-9, .case-content .col-lg-auto, .case-content .col-md, .case-content .col-md-1, .case-content .col-md-10, .case-content .col-md-11, .case-content .col-md-12, .case-content .col-md-2, .case-content .col-md-3, .case-content .col-md-4, .case-content .col-md-5, .case-content .col-md-6, .case-content .col-md-7, .case-content .col-md-8, .case-content .col-md-9, .case-content .col-md-auto, .case-content .col-sm, .case-content .col-sm-1, .case-content .col-sm-10, .case-content .col-sm-11, .case-content .col-sm-12, .case-content .col-sm-2, .case-content .col-sm-3, .case-content .col-sm-4, .case-content .col-sm-5, .case-content .col-sm-6, .case-content .col-sm-7, .case-content .col-sm-8, .case-content .col-sm-9, .case-content .col-sm-auto, .case-content .col-xl, .case-content .col-xl-1, .case-content .col-xl-10, .case-content .col-xl-11, .case-content .col-xl-12, .case-content .col-xl-2, .case-content .col-xl-3, .case-content .col-xl-4, .case-content .col-xl-5, .case-content .col-xl-6, .case-content .col-xl-7, .case-content .col-xl-8, .case-content .col-xl-9, .case-content .col-xl-auto { padding-right: 0; padding-left: 0; }
+  .case-content .card-body { padding: 0.8rem; }
+  .case-content .card-title { font-size: 1rem; }
+  .news-case { margin-left: 0.25rem; margin-right: 0.25rem; } }
 
 /*# sourceMappingURL=case.css.map */
