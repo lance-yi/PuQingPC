@@ -164,5 +164,24 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .commom-navs-content__item { -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; margin: 0; max-width: 25%; }
   .commom-navs-content__icon { width: 5rem; height: 5rem; line-height: 5rem; font-size: 2.5rem; margin-bottom: 0.9375rem; }
   .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
+.company-wrap { padding-top: 6.25rem; padding-bottom: 6.25rem; }
+.company-wrap-bg1 { height: 25rem; background: url("../images/website/pimg1.png") no-repeat center center; }
+.company-wrap-content { padding-top: 3.75rem; padding-bottom: 1.25rem; }
+.company-wrap-content h1 { margin-bottom: 1.875rem; }
+.company-wrap-content p { line-height: 2.4; max-width: 80%; text-align: justify; }
+.company-wrap.company-wrap1 { min-height: 34.375rem; background: url("../images/website/pimg2.jpg") no-repeat center center; }
+.company-wrap-super__item { margin-top: 0.9375rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.company-wrap-super__item .iconfont { font-size: 2.5rem; }
+.company-wrap-super__text { padding-left: 0.625rem; }
+.company-wrap-super__text p { color: #666666; margin-bottom: 0; }
+.company-wrap-power { padding-top: 1.25rem; }
+.company-wrap-power .iconfont { color: #0091ff; border-radius: 50%; font-size: 6.25rem; }
 
-/*# sourceMappingURL=common.css.map */
+@media (max-width: 575.98px) { .company-wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .company-wrap h1 { font-size: 1.75rem; }
+  .company-wrap-bg1 { height: 18.75rem; background-size: 100%; }
+  .company-wrap-content { padding-top: 1.25rem; }
+  .company-wrap-content p { max-width: 100%; }
+  .company-wrap-power .iconfont { font-size: 3.75rem; } }
+
+/*# sourceMappingURL=web-site-company.css.map */
