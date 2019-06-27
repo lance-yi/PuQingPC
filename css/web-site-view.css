@@ -49,8 +49,6 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 /* 主体 */
 .main-view { width: 100%; height: 100%; max-width: 103.5rem; margin: 0 auto; }
 
-.main-body { max-width: 103.5rem; }
-
 .wrap-row { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 /* 联系我们 */
@@ -164,6 +162,8 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .commom-navs-content__item { -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; margin: 0; max-width: 25%; }
   .commom-navs-content__icon { width: 5rem; height: 5rem; line-height: 5rem; font-size: 2.5rem; margin-bottom: 0.9375rem; }
   .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
+.main-body { max-width: 103.5rem; }
+
 .webview-wrap { padding-top: 3.75rem; padding-bottom: 3.75rem; }
 .webview-wrap-bg1 { height: 29.25rem; background: url("../images/website/webview-img1.jpg") no-repeat left center; }
 .webview-wrap-bg2 { height: 27.9375rem; background: url("../images/website/webview-img2.png") no-repeat bottom center; background-size: auto 100%; }
