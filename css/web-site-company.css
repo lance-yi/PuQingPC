@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.eot"); src: url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.svg#iconfont") format("svg"); }
+@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_snnltrlma4h.eot"); src: url("//at.alicdn.com/t/font_1245505_snnltrlma4h.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_snnltrlma4h.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_snnltrlma4h.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_snnltrlma4h.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_snnltrlma4h.svg#iconfont") format("svg"); }
 .iconfont { font-family: "iconfont" !important; font-size: 1rem; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.1px; -moz-osx-font-smoothing: grayscale; }
 
 /* 公共的样式 */
@@ -164,9 +164,9 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
 .main-body { max-width: 103.5rem; }
 
-.company-wrap { padding-top: 6.25rem; padding-bottom: 6.25rem; /** 营销型网站 */ /** 响应式网站 */ }
+.company-wrap { padding-top: 3.75rem; padding-bottom: 3.75rem; /** 营销型网站 */ /** 响应式网站 */ }
 .company-wrap-bg1 { height: 25rem; background: url("../images/website/pimg1.png") no-repeat center center; }
-.company-wrap-saleimg1 { height: 38.75rem; background: url("../images/website/sale-img1.jpg") no-repeat center center; }
+.company-wrap-saleimg1 { height: 38.75rem; background: url("../images/website/sale-img1.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-sale1 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg1.png") no-repeat center center; }
 .company-wrap-saleimg2 { height: 47.5rem; background: url("../images/website/sale-img2.jpg") no-repeat center center; }
 .company-wrap-sale2 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg2.jpg") no-repeat center center; }
