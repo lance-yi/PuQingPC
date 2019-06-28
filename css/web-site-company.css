@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.eot"); src: url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_lfx8tn7ca7.svg#iconfont") format("svg"); }
+@font-face { font-family: "iconfont"; src: url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.eot"); src: url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.woff2") format("woff2"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.woff") format("woff"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.ttf") format("truetype"), url("//at.alicdn.com/t/font_1245505_go1vmlv5zc.svg#iconfont") format("svg"); }
 .iconfont { font-family: "iconfont" !important; font-size: 1rem; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.1px; -moz-osx-font-smoothing: grayscale; }
 
 /* 公共的样式 */
@@ -164,8 +164,21 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
 .main-body { max-width: 103.5rem; }
 
-.company-wrap { padding-top: 6.25rem; padding-bottom: 6.25rem; }
+.company-wrap { padding-top: 6.25rem; padding-bottom: 6.25rem; /** 营销型网站 */ /** 响应式网站 */ }
 .company-wrap-bg1 { height: 25rem; background: url("../images/website/pimg1.png") no-repeat center center; }
+.company-wrap-saleimg1 { height: 38.75rem; background: url("../images/website/sale-img1.jpg") no-repeat center center; }
+.company-wrap-sale1 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg1.png") no-repeat center center; }
+.company-wrap-saleimg2 { height: 47.5rem; background: url("../images/website/sale-img2.jpg") no-repeat center center; }
+.company-wrap-sale2 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg2.jpg") no-repeat center center; }
+.company-wrap-allimg1 { height: 28.75rem; background: url("../images/website/all-img1.jpg") no-repeat center center; background-size: cover; }
+.company-wrap-allbg1 { height: 33.125rem; background: url("../images/website/all-bg1.jpg") no-repeat center center; background-size: cover; }
+.company-wrap-allimg2 { height: 28.75rem; background: url("../images/website/all-img2.jpg") no-repeat center center; background-size: cover; }
+.company-wrap-allbg2 { padding-top: 1.875rem; height: 33.125rem; background: url("../images/website/all-bg2.jpg") no-repeat center center; background-size: cover; }
+.company-wrap .wrap-all-itembg1, .company-wrap .wrap-all-itembg2, .company-wrap .wrap-all-itembg3 { width: 5.5rem; height: 5.5rem; padding-top: 1.25rem; }
+.company-wrap .wrap-all-itembg1 { background: url("../images/website/c01.png") no-repeat center center; }
+.company-wrap .wrap-all-itembg2 { background: url("../images/website/c02.png") no-repeat center center; }
+.company-wrap .wrap-all-itembg3 { background: url("../images/website/c03.png") no-repeat center center; }
+.company-wrap-allimg3 { height: 28.75rem; background: url("../images/website/all-img3.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-content { padding-top: 3.75rem; padding-bottom: 1.25rem; }
 .company-wrap-content h1 { margin-bottom: 1.875rem; }
 .company-wrap-content p { line-height: 2.4; max-width: 80%; text-align: justify; }
@@ -176,10 +189,25 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .company-wrap-super__text p { color: #666666; margin-bottom: 0; }
 .company-wrap-power { padding-top: 1.25rem; }
 .company-wrap-power .iconfont { color: #0091ff; border-radius: 50%; font-size: 6.25rem; }
+.company-wrap .wrap-sale-item { line-height: 2.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.company-wrap .wrap-sale-item .iconfont { font-size: 1.5625rem; margin-bottom: 0; padding-right: 0.625rem; }
+.company-wrap .wrap-step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.company-wrap .wrap-step-item { width: 7.1875rem; margin: 0.625rem 0.3125rem; }
+.company-wrap .wrap-step-item h6 { font-size: 0.875rem; color: #999999; }
 
-@media (max-width: 575.98px) { .company-wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+@media (max-width: 575.98px) { .company-wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; /** 营销型网站 */ /** 响应式网站 */ }
   .company-wrap h1 { font-size: 1.75rem; }
   .company-wrap-bg1 { height: 18.75rem; background-size: 100%; }
+  .company-wrap-saleimg1 { height: 25rem; background-size: cover; }
+  .company-wrap-sale1 { color: #ffffff; height: auto; background-size: cover; }
+  .company-wrap-saleimg2 { height: 25rem; background-size: cover; }
+  .company-wrap-sale2 { color: #ffffff; height: auto; background-size: cover; }
+  .company-wrap-allimg1, .company-wrap-allimg2, .company-wrap-allimg3 { height: 15.625rem; }
+  .company-wrap-allbg1, .company-wrap-allbg2 { height: 25rem; }
+  .company-wrap .wrap-all-itembg1, .company-wrap .wrap-all-itembg2, .company-wrap .wrap-all-itembg3 { width: 5.5rem; height: 5.5rem; padding-top: 1.25rem; }
+  .company-wrap .wrap-all-itembg1 { background: url("../images/website/c01.png") no-repeat center center; }
+  .company-wrap .wrap-all-itembg2 { background: url("../images/website/c02.png") no-repeat center center; }
+  .company-wrap .wrap-all-itembg3 { background: url("../images/website/c03.png") no-repeat center center; }
   .company-wrap-content { padding-top: 1.25rem; }
   .company-wrap-content p { max-width: 100%; }
   .company-wrap-power .iconfont { font-size: 3.75rem; } }
