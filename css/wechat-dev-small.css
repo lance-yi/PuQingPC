@@ -168,9 +168,9 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .commom-navs-content__item { -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; margin: 0; max-width: 25%; }
   .commom-navs-content__icon { width: 5rem; height: 5rem; line-height: 5rem; font-size: 2.5rem; margin-bottom: 0.9375rem; }
   .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
-.small-banner, .nopublic-banner { color: #ffffff; height: 41.25rem; background: url("../images/wechatdev/small/banner.png") no-repeat center center; }
+.small-banner, .nopublic-banner { color: #ffffff; height: 41.25rem; background: url("../images/wechatdev/small/banner.png") no-repeat center center; background-size: cover; }
 
-.nopublic-banner { background: url("../images/wechatdev/nopublic/WeChat_banner.png") no-repeat bottom center; }
+.nopublic-banner { background: url("../images/wechatdev/nopublic/WeChat_banner.png") no-repeat bottom center; background-size: cover; }
 .nopublic-banner h1 { margin-top: 11.25rem; }
 
 .small-wrap { padding-top: 3.75rem; padding-bottom: 1.875rem; /** 微信四大服务 */ }
@@ -211,11 +211,11 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .small-wrap-service__img { width: 100%; height: 100%; max-width: 6.25rem; }
 .small-wrap-service__cont p { color: #999999; }
 .small-wrap-feature { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.small-wrap-feature__box1 { background: url("../images/wechatdev/nopublic/feature1.png") no-repeat center center; }
-.small-wrap-feature__box2 { background: url("../images/wechatdev/nopublic/feature2.png") no-repeat center center; }
-.small-wrap-feature__box3 { background: url("../images/wechatdev/nopublic/feature3.png") no-repeat center center; }
-.small-wrap-feature__box4 { background: url("../images/wechatdev/nopublic/feature4.png") no-repeat center center; }
-.small-wrap-feature__box5 { background: url("../images/wechatdev/nopublic/feature5.png") no-repeat center center; }
+.small-wrap-feature__box1 { background: url("../images/wechatdev/nopublic/feature1.png") no-repeat center center; background-size: cover; }
+.small-wrap-feature__box2 { background: url("../images/wechatdev/nopublic/feature2.png") no-repeat center center; background-size: cover; }
+.small-wrap-feature__box3 { background: url("../images/wechatdev/nopublic/feature3.png") no-repeat center center; background-size: cover; }
+.small-wrap-feature__box4 { background: url("../images/wechatdev/nopublic/feature4.png") no-repeat center center; background-size: cover; }
+.small-wrap-feature__box5 { background: url("../images/wechatdev/nopublic/feature5.png") no-repeat center center; background-size: cover; }
 .small-wrap-feature__box { height: 26.25rem; -webkit-box-flex: 0; -ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #ffffff; background-size: cover; overflow: hidden; margin-bottom: 1.25rem; }
 .small-wrap-feature__box h5 { margin-top: 1rem; }
 

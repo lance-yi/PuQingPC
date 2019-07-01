@@ -177,8 +177,8 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .shop-wrap-todo .iconfont { padding-right: 0.625rem; margin-bottom: 0; font-size: 1.75rem; }
 .shop-wrap-webimg1 { height: 27.75rem; background: url("../images/website/b2b-img1.jpg") no-repeat center center; }
 .shop-wrap-webimg2 { height: 37.5rem; background: url("../images/website/b2b-img6.jpg") no-repeat center center; }
-.shop-wrap-webbg1, .shop-wrap-webbg2 { height: 33.125rem; background: url("../images/website/b2b-bg1.jpg") no-repeat center center; }
-.shop-wrap-webbg2 { background: url("../images/website/b2b-bg2.jpg") no-repeat center center; }
+.shop-wrap-webbg1, .shop-wrap-webbg2 { height: 33.125rem; background: url("../images/website/b2b-bg1.jpg") no-repeat center center; background-size: cover; }
+.shop-wrap-webbg2 { background: url("../images/website/b2b-bg2.jpg") no-repeat center center; background-size: cover; }
 .shop-wrap-content { padding-top: 3.75rem; padding-bottom: 1.25rem; }
 .shop-wrap-content h1 { margin-bottom: 1.875rem; }
 .shop-wrap-content p { line-height: 2.4; max-width: 80%; text-align: justify; }
@@ -187,24 +187,24 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .shop-wrap-b2b2cimg2 { background: url("../images/website/b2b2c-img2.jpg") no-repeat center center; }
 .shop-wrap-b2b2cimg3 { background: url("../images/website/b2b2c-img4.jpg") no-repeat center center; }
 .shop-wrap-b2b2cimg4 { height: 15.625rem; background: url("../images/website/b2b2c-img5.jpg") no-repeat center center; background-size: 100%; }
-.shop-wrap-b2b2cbg1, .shop-wrap-b2b2cbg2, .shop-wrap-b2b2cbg3 { height: 34.375rem; background-size: cover; }
 .shop-wrap-b2b2cbg1 { background: url("../images/website/b2b2c-bg1.jpg") no-repeat center center; }
 .shop-wrap-b2b2cbg2 { padding-top: 8.75rem; background: url("../images/website/b2b2c-bg2.jpg") no-repeat center center; }
 .shop-wrap-b2b2cbg3 { background: url("../images/website/b2b2c-bg3.jpg") no-repeat center center; }
+.shop-wrap-b2b2cbg1, .shop-wrap-b2b2cbg2, .shop-wrap-b2b2cbg3 { height: 34.375rem; background-size: cover; }
 .shop-wrap-saleimg1, .shop-wrap-saleimg2, .shop-wrap-saleimg3, .shop-wrap-saleimg4, .shop-wrap-saleimg5 { height: 25rem; }
 .shop-wrap-saleimg1 { background: url("../images/website/shopsale-img1.jpg") no-repeat center center; }
 .shop-wrap-saleimg2 { background: url("../images/website/shopsale-img3.jpg") no-repeat center center; }
 .shop-wrap-saleimg3 { background: url("../images/website/shopsale-img4.jpg") no-repeat center center; }
 .shop-wrap-saleimg4 { background: url("../images/website/shopsale-img5.jpg") no-repeat center center; background-size: auto 100%; }
 .shop-wrap-saleimg5 { height: 12.5rem; background: url("../images/website/shopsale-img6.jpg") no-repeat center center; }
-.shop-wrap-salebg1, .shop-wrap-salebg2, .shop-wrap-salebg3, .shop-wrap-salebg4 { height: 35rem; background-size: cover; }
 .shop-wrap-salebg1 { padding-top: 1.875rem; background: url("../images/website/shopsale-bg1.jpg") no-repeat center center; }
 .shop-wrap-salebg2 { background: url("../images/website/shopsale-bg2.jpg") no-repeat center center; }
 .shop-wrap-salebg3 { background: url("../images/website/shopsale-bg3.jpg") no-repeat center center; }
 .shop-wrap-salebg3 .design { font-size: 1.125rem; }
 .shop-wrap-salebg3 .design span { font-size: 1.5rem; }
+.shop-wrap-salebg1, .shop-wrap-salebg2, .shop-wrap-salebg3, .shop-wrap-salebg4 { height: 35rem; background-size: cover; }
 .shop-wrap-salebg4 { background: url("../images/website/shopsale-bg4.jpg") no-repeat center center; }
-.shop-wrap-salebg5 { background: url("../images/website/shopsale-bg5.jpg") no-repeat center center; }
+.shop-wrap-salebg5 { background: url("../images/website/shopsale-bg5.jpg") no-repeat center center; background-size: cover; }
 .shop-wrap .wrap-step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .shop-wrap .wrap-step-item { width: 8.125rem; margin: 0.625rem 0.3125rem; }
 .shop-wrap .wrap-step-item h6 { font-size: 0.875rem; color: #999999; }

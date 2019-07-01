@@ -173,9 +173,9 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .company-wrap { padding-top: 3.75rem; padding-bottom: 3.75rem; /** 营销型网站 */ /** 响应式网站 */ }
 .company-wrap-bg1 { height: 25rem; background: url("../images/website/pimg1.png") no-repeat center center; }
 .company-wrap-saleimg1 { height: 38.75rem; background: url("../images/website/sale-img1.jpg") no-repeat center center; background-size: cover; }
-.company-wrap-sale1 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg1.png") no-repeat center center; }
+.company-wrap-sale1 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg1.png") no-repeat center center; background-size: cover; }
 .company-wrap-saleimg2 { height: 47.5rem; background: url("../images/website/sale-img2.jpg") no-repeat center center; }
-.company-wrap-sale2 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg2.jpg") no-repeat center center; }
+.company-wrap-sale2 { color: #ffffff; height: 33.125rem; background: url("../images/website/sale-bg2.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-allimg1 { height: 28.75rem; background: url("../images/website/all-img1.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-allbg1 { height: 33.125rem; background: url("../images/website/all-bg1.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-allimg2 { height: 28.75rem; background: url("../images/website/all-img2.jpg") no-repeat center center; background-size: cover; }
@@ -188,7 +188,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .company-wrap-content { padding-top: 3.75rem; padding-bottom: 1.25rem; }
 .company-wrap-content h1 { margin-bottom: 1.875rem; }
 .company-wrap-content p { line-height: 2.4; max-width: 80%; text-align: justify; }
-.company-wrap.company-wrap1 { min-height: 34.375rem; background: url("../images/website/pimg2.jpg") no-repeat center center; }
+.company-wrap.company-wrap1 { min-height: 34.375rem; background: url("../images/website/pimg2.jpg") no-repeat center center; background-size: cover; }
 .company-wrap-super__item { margin-top: 0.9375rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .company-wrap-super__item .iconfont { font-size: 2.5rem; }
 .company-wrap-super__text { padding-left: 0.625rem; }

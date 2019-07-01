@@ -4,8 +4,10 @@
   color: #ffffff
   height: 41.25rem /* 660/16 */
   background: url('../images/wechatdev/small/banner.png') no-repeat center center
+  background-size: cover
 .nopublic-banner
   background: url('../images/wechatdev/nopublic/WeChat_banner.png') no-repeat bottom center
+  background-size: cover
   h1
     margin-top: 11.25rem /* 180/16 */
 .small-wrap
@@ -161,6 +163,7 @@
     @for $i from 1 through 5
       &__box#{$i}
         background: url('../images/wechatdev/nopublic/feature#{$i}.png') no-repeat center center
+        background-size: cover
     &__box
       height: 26.25rem /* 420/16 */
       flex: 0 0 20%

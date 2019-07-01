@@ -190,12 +190,12 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .webview-wrap1-list { margin-left: 0; list-style: none; margin-top: 3.125rem; }
 .webview-wrap1-list li { padding-bottom: 0.25rem; color: #888888; }
 
-.webview-wrap2 { padding-bottom: 0; color: #ffffff; background: url("../images/website/webview-bg1.jpg") no-repeat center center; }
+.webview-wrap2 { padding-bottom: 0; color: #ffffff; background: url("../images/website/webview-bg1.jpg") no-repeat center center; background-size: cover; }
 .webview-wrap2 p { max-width: 80%; }
 .webview-wrap2-list { margin-top: 3.125rem; }
 .webview-wrap2-list li { padding-bottom: 0.25rem; }
 
-.webview-wrap3 { color: #ffffff; background: url("../images/website/webview-bg2.jpg") no-repeat center center; }
+.webview-wrap3 { color: #ffffff; background: url("../images/website/webview-bg2.jpg") no-repeat center center; background-size: cover; }
 .webview-wrap3-text p { line-height: 1.8; }
 
 .webview-wrap-step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
