@@ -87,9 +87,9 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .dual-left { bottom: 12.5rem; left: 0.625rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 .dual-left-item { position: relative; width: auto; min-width: 3rem; height: 3rem; line-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0.625rem; }
 .dual-left-item span { position: absolute; width: 0; height: 3rem; line-height: 2.75rem; white-space: nowrap; color: #ffffff; background: transparent; border-radius: 1.5625rem; z-index: 1; overflow: hidden; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
-.dual-left a:hover { text-decoration: none; }
-.dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
-.dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
+.dual-left a.active, .dual-left a:hover { text-decoration: none; }
+.dual-left a.active > span, .dual-left a:hover > span { position: relative; width: auto; padding-right: 1.625rem; padding-left: 3.125rem; background: #0192ff; }
+.dual-left a.active > .dual-left-img, .dual-left a:hover > .dual-left-img { background: #0192ff; position: absolute; }
 .dual-left-img { position: relative; left: 0; z-index: 1; width: 3rem; height: 3rem; background: #154e6a; border-radius: 50%; vertical-align: middle; text-align: center; }
 .dual-left-img i { color: #ffffff; font-size: 1.375rem; line-height: 3rem; }
 .dual-right { right: 0.625rem; }
@@ -127,13 +127,13 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 /** 不变的banner */
 .commom-banner { height: 24.6875rem; background: url("../images/news-info/banner.jpg") no-repeat center center; background-size: cover; }
 
-.commom-navs { min-height: 5rem; padding-top: 1.25rem; padding-bottom: 0.625rem; width: 100%; background: #f4f7fa; }
-.commom-navs-content { min-height: 5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.commom-navs { padding-top: 0.875rem; width: 100%; background: #f4f7fa; }
+.commom-navs-content { min-height: 2.5rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .commom-navs-content__item { color: #444; text-align: center; margin: 0 1.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .commom-navs-content__item:hover, .commom-navs-content__item.active { color: #0091ff; text-decoration: none; }
 .commom-navs-content__item:hover .iconfont, .commom-navs-content__item.active .iconfont { background: #ffffff; color: #0091ff; }
-.commom-navs-content__icon { width: 5rem; height: 5rem; line-height: 4.875rem; font-size: 3.25rem; border: 1px solid #eeeeee; border-radius: 50%; margin-bottom: 0.9375rem; }
-.commom-navs-content__title { font-size: 1.125rem; opacity: 0.8; }
+.commom-navs-content__icon { width: 2.5rem; height: 2.5rem; line-height: 2.5rem; font-size: 1.625rem; border: 1px solid #eeeeee; border-radius: 50%; margin-bottom: 0.625rem; }
+.commom-navs-content__title { font-size: 1rem; opacity: 0.8; }
 
 @media (max-width: 1199.98px) { .main-header .navbar-nav li { white-space: nowrap; margin: 0 1.125rem; }
   .main-header .navbar-nav li .nav-link { padding: 0.5rem; }
@@ -166,8 +166,8 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
   .news-info-title { font-size: 1.375rem; }
   .commom-banner { height: 15.625rem; background-size: cover; }
   .commom-navs-content__item { -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; margin: 0; max-width: 25%; }
-  .commom-navs-content__icon { width: 5rem; height: 5rem; line-height: 5rem; font-size: 2.5rem; margin-bottom: 0.9375rem; }
-  .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.875rem; } }
+  .commom-navs-content__icon { margin-bottom: 0.25rem; }
+  .commom-navs-content__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; font-size: 0.75rem; } }
 .main-body { max-width: 103.5rem; }
 
 .company-wrap { padding-top: 3.75rem; padding-bottom: 3.75rem; /** 营销型网站 */ /** 响应式网站 */ }
