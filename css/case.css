@@ -201,7 +201,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 
 /** 案例详情页面 */
 .case-info-body { width: 100%; margin-top: 3.75rem; margin-bottom: 6.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; }
-.case-info-body__left { position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; height: 60.625rem; padding-top: 0.625rem; }
+.case-info-body__left { position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; height: 60.625rem; padding-top: 0.625rem; padding-right: 0.9375rem; padding-left: 0.9375rem; }
 .case-info-body__right { position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
 .case-info-body__right .news-info-body { position: relative; margin: 0; overflow: hidden; }
 .case-info-body__right .news-info-body img { height: auto; max-width: 100%; }
