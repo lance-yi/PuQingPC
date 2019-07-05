@@ -120,7 +120,7 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .news-info-time span { padding-top: 0.3125rem; padding-bottom: 0.3125rem; }
 .news-info-desc { padding: 0.625rem; text-align: center; }
 .news-info-desc p { text-align: left; text-indent: 2em; font-size: 0.875rem; color: #666666; margin: 0; padding-top: 0.625rem; }
-.news-info-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 15px; }
+.news-info-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 0 15px; line-height: 1.8; }
 .news-info-card { padding: 0; }
 .news-info-card h5 { width: 100%; position: absolute; background: rgba(0, 0, 0, 0.9); color: #ffffff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; bottom: 0; padding: 0.5rem 0.25rem; text-align: center; }
 
@@ -200,11 +200,13 @@ html, body { position: relative; height: 100%; font-size: 0.9375rem; outline: no
 .case-news-item span { width: 7.5rem; text-align: right; }
 
 /** 案例详情页面 */
-.case-info-body { width: 100%; margin-top: 3.75rem; margin-bottom: 3.75rem; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.case-info-body { width: 100%; margin-top: 3.75rem; margin-bottom: 6.25rem; display: -webkit-box; display: -ms-flexbox; display: flex; }
 .case-info-body__left { position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; height: 60.625rem; padding-top: 0.625rem; }
 .case-info-body__right { position: relative; -webkit-box-flex: 0; -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
-.case-info-body__right .news-info-body { margin: 0; }
+.case-info-body__right .news-info-body { position: relative; margin: 0; overflow: hidden; }
+.case-info-body__right .news-info-body img { height: auto; max-width: 100%; }
 .case-info-card { padding: 0; }
+.case-info-card img { height: 15rem; }
 .case-info-card h5 { width: 100%; position: absolute; background: rgba(0, 0, 0, 0.9); color: #ffffff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; bottom: 0; padding: 0.5rem 0.25rem; text-align: center; margin-bottom: 0; }
 .case-info-card.active { -webkit-box-shadow: 0px 0px 5px 2px rgba(24, 172, 244, 0.8); box-shadow: 0px 0px 5px 2px rgba(24, 172, 244, 0.8); }
 
