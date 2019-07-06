@@ -42,6 +42,8 @@ html,body
   justify-content: center
   align-items: center
 
+.text-ft-h1
+  font-size: 2.5rem
 
 /* 颜色值 */
 .text-96
@@ -231,7 +233,7 @@ html,body
   background: url('../images/website/web-bg6.png') no-repeat center center
   background-size: cover
   &-title
-    font-size: 3rem /* 48/16 */
+    font-size: 2.5rem
     margin-bottom: 3.125rem /* 50/16 */
   &-form
     min-height: 18.75rem /* 300/16 */
@@ -523,7 +525,6 @@ html,body
     padding: .625rem /* 10/16 */
     font-size: 1rem
     line-height: 1.8
-    text-indent: 2em
     text-align: justify
   &-title
     text-align: center
@@ -649,6 +650,8 @@ html,body
 
 // Large devices (desktops, less than 756px)
 @media (max-width: 575.98px)
+  .text-ft-h1
+    font-size: 1.75rem
   .main-header
     .navbar-brand
       img
@@ -711,6 +714,9 @@ html,body
       margin-left: -15px
     &-content
       padding: .625rem /* 10/16 */
+      img
+        max-width: 100%
+        height: auto
     &-title
       font-size: 1.375rem /* 22/16 */
     &-footer
